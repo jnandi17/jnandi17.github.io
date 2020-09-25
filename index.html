@@ -1,0 +1,419 @@
+<html>
+<head>
+<title> Course Selector </title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+function conditional_dropdown(value)
+{
+ document.getElementById("course1").length = 0;
+ document.getElementById("dept1").length=0;
+ switch(value)
+ {
+  case "Softcore":
+    document.getElementById("dept1").options[0]=new Option("Select Dept","");
+    document.getElementById("dept1").options[1]=new Option("CDS","CDS");
+    break;
+  case "Elective":
+    document.getElementById("dept1").options[0]=new Option("Select Dept","");
+    document.getElementById("dept1").options[1]=new Option("CDS","CDS");
+    document.getElementById("dept1").options[2]=new Option("CSA","CSA");
+    document.getElementById("dept1").options[3]=new Option("EE","EE");
+    document.getElementById("dept1").options[4]=new Option("ECE","ECE");
+    break;
+  }
+  
+ return true;
+}
+
+function conditional_dropdown_course1(xyz)
+{
+ document.getElementById("course1").length=0;
+ var category=document.getElementById("cat1").value;
+ switch(xyz)
+ {
+  case "CDS":
+     if(category=="Softcore"){
+     document.getElementById("course1").options[0]=new Option("Select Course","");
+     document.getElementById("course1").options[1]=new Option("Numerical Organization DS211","DS211");
+     document.getElementById("course1").options[2]=new Option("Modelling and Simulation DS290","DS290");
+     document.getElementById("course1").options[3]=new Option("Bioinformatics DS201","DS201");
+   }
+   else if(category=="Elective"){
+      document.getElementById("course1").options[0]=new Option("Select Course","");
+      document.getElementById("course1").options[1]=new Option("Video Analytics DS263","DS263");
+      document.getElementById("course1").options[2]=new Option("Finite Elements DS291","DS291");
+   }
+   break;
+  case "EE":
+    document.getElementById("course1").options[0]=new Option("Select Course","");
+    document.getElementById("course1").options[1]=new Option("Dynamics of Linear Systems E1241","E1241");
+    document.getElementById("course1").options[2]=new Option("Power System Dynamics and Control E4231","E4231");
+    document.getElementById("course1").options[3]=new Option("Advanced Power System Analysis E4234","E4234");
+    document.getElementById("course1").options[4]=new Option("High Voltage Power Apparatus E5206","E5206");
+    document.getElementById("course1").options[5]=new Option("Electric Drives E6211","E6211");
+    document.getElementById("course1").options[6]=new Option("Topics in Power Electronics E6224","E6224");
+    document.getElementById("course1").options[7]=new Option("Switch Reluctance Machines and Drives E6226","E6226");
+    document.getElementById("course1").options[8]=new Option("Electromagnetism E8201","E8201");
+    document.getElementById("course1").options[9]=new Option("Sensor Networks E0247","E0247");
+    document.getElementById("course1").options[10]=new Option("Computational Linear Algebra E0299","E0299");
+    document.getElementById("course1").options[11]=new Option("Stochastic Models and Application E1222","E1222");
+    document.getElementById("course1").options[12]=new Option("Topics in Networked and Distributed Control E1246", "E1246");
+    document.getElementById("course1").options[13]=new Option("Linear and Non linear optimization E1251","E1251");
+    document.getElementById("course1").options[14]=new Option("Digital Signal Processing E9201","E9201");
+    document.getElementById("course1").options[15]=new Option("Digital Image Processing E9241","E9241");
+    document.getElementById("course1").options[16]=new Option("Selected Topics in Computer Vision E9245","E9245");
+    document.getElementById("course1").options[17]=new Option("DSP System Design E9291","E9291");
+    document.getElementById("course1").options[18]=new Option("Advanced Deep Learning E9309","E9309");
+    break;
+ }
+ return true;
+} 
+function conditional_dropdown_2(value)
+{
+ document.getElementById("course2").length = 0;
+ document.getElementById("dept2").length=0;
+ switch(value)
+ {
+  case "Softcore":
+    document.getElementById("dept2").options[0]=new Option("Select Dept","");
+    document.getElementById("dept2").options[1]=new Option("CDS","CDS");
+    break;
+  case "Elective":
+    document.getElementById("dept2").options[0]=new Option("Select Dept","");
+    document.getElementById("dept2").options[1]=new Option("CDS","CDS");
+    document.getElementById("dept2").options[2]=new Option("CSA","CSA");
+    document.getElementById("dept2").options[3]=new Option("EE","EE");
+    document.getElementById("dept2").options[4]=new Option("ECE","ECE");
+    break;
+  }
+  
+ return true;
+}
+
+function conditional_dropdown_course2(xyz)
+{
+ document.getElementById("course2").length=0;
+ var category=document.getElementById("cat2").value;
+ switch(xyz)
+ {
+  case "CDS":
+     if(category=="Softcore"){
+     document.getElementById("course2").options[0]=new Option("Select Course","");
+     document.getElementById("course2").options[1]=new Option("Numerical Organization DS211","DS211");
+     document.getElementById("course2").options[2]=new Option("Modelling and Simulation DS290","DS290");
+     document.getElementById("course2").options[3]=new Option("Bioinformatics DS201","DS201");
+   }
+   else if(category=="Elective"){
+      document.getElementById("course2").options[0]=new Option("Select Course","");
+      document.getElementById("course2").options[1]=new Option("Video Analytics DS263","DS263");
+      document.getElementById("course2").options[2]=new Option("Finite Elements DS291","DS291");
+   }
+   break;
+  case "EE":
+    document.getElementById("course2").options[0]=new Option("Select Course","");
+    document.getElementById("course2").options[1]=new Option("Dynamics of Linear Systems E1241","E1241");
+    document.getElementById("course2").options[2]=new Option("Power System Dynamics and Control E4231","E4231");
+    document.getElementById("course2").options[3]=new Option("Advanced Power System Analysis E4234","E4234");
+    document.getElementById("course2").options[4]=new Option("High Voltage Power Apparatus E5206","E5206");
+    document.getElementById("course2").options[5]=new Option("Electric Drives E6211","E6211");
+    document.getElementById("course2").options[6]=new Option("Topics in Power Electronics E6224","E6224");
+    document.getElementById("course2").options[7]=new Option("Switch Reluctance Machines and Drives E6226","E6226");
+    document.getElementById("course2").options[8]=new Option("Electromagnetism E8201","E8201");
+    document.getElementById("course2").options[9]=new Option("Sensor Networks E0247","E0247");
+    document.getElementById("course2").options[10]=new Option("Computational Linear Algebra E0299","E0299");
+    document.getElementById("course2").options[11]=new Option("Stochastic Models and Application E1222","E1222");
+    document.getElementById("course2").options[12]=new Option("Topics in Networked and Distributed Control E1246", "E1246");
+    document.getElementById("course2").options[13]=new Option("Linear and Non linear optimization E1251","E1251");
+    document.getElementById("course2").options[14]=new Option("Digital Signal Processing E9201","E9201");
+    document.getElementById("course2").options[15]=new Option("Digital Image Processing E9241","E9241");
+    document.getElementById("course2").options[16]=new Option("Selected Topics in Computer Vision E9245","E9245");
+    document.getElementById("course2").options[17]=new Option("DSP System Design E9291","E9291");
+    document.getElementById("course2").options[18]=new Option("Advanced Deep Learning E9309","E9309");
+    break;
+ }
+ return true;
+} 
+function same_check()
+{
+var course1=document.getElementById("course1").value;
+var course2=document.getElementById("course2").value;
+var category1=document.getElementById("cat1").value;
+var category2=document.getElementById("cat2").value;
+var dept1=document.getElementById("dept1").value;
+var dept2=document.getElementById("dept2").value;
+var cds_hardcore_time=["T8.5","T9","T9.5","Th8.5","Th9","Th9.5","M11","M11.5","W11","W11.5","F11","F11.5",
+                        "T14","T14.5","T15","Th14","Th14.5","Th15"]
+var course_time={DS211:["T11.5","T12","T12.5","Th11.5","Th12","Th12.5"],DS290:["T15.5","T16","T16.5","Th15.5","Th16","Th16.5"],DS201:"",
+                 DS263:"",DS291:["M10","M10.5","W10","W10.5","F10","F10.5"],
+                 E1241:["M10","M10.5","W10","W10.5","F10","F10.5"],E4231:["T11.5","T12","T12.5","Th11.5","Th12","Th12.5"],
+                      E4234:["M11","M11.5","W11","W11.5","F11","F11.5"],E5206:["M12","M12.5","W12","W12.5","F12","F12.5"],
+                      E6211:["M9","M9.5","W9","W9.5","F9","F9.5"],E6224:["M11","M11.5","W11","W11.5","F11","F11.5"],
+                      E6226:["T8.5","T9","T9.5","Th8.5","Th9","Th9.5"],E8201:["T10","T10.5","T11","Th10","Th10.5","Th11"],
+                      E0247:["T15.5","T16","T16.5","Th15.5","Th16","Th16.5"],E0299:["T15.5","T16","T16.5","Th15.5","Th16","Th16.5"],
+                      E1222:["M9.5","M10","M10.5","W9.5","W10","W10.5"],E1246:["T14","T14.5","T15","Th14","Th14.5","Th15"],
+                      E1251:["W14","W14.5","W15","F14","F14.5","F15"],E9201:["T15.5","T16","T16.5","Th15.5","Th16","Th16.5"],
+                      E9241:["M16","M16.5","W16","W16.5"],E9245:["M14","M14.5","M15","M15.5","W14","W14.5","W15","W15.5"],
+                      E9291:["M8","M8.5","W8","W8.5"],E9309:["M15.5","M16","M16.5","W15.5","W16","W16.5"]}
+var course_prof={DS211:"D.Subramani",DS290:"S.Raha",DS201:"K.Sekar/D.Pal",
+                 DS263:"V Babu/A Chakrabarty",DS291:"S. Ganesan",
+                 E1241:"Pavankumar Vaibhav K",E4231:"Gurunath G",
+                      E4234:"Sarajis Das",E5206:"Satish/Rajnikanth/Udaya",
+                      E6211:"G Narayanan",E6224:"Vinod John",
+                      E6226:"G Narayanan",E8201:"Udaya Kumar",
+                      E0247:"G.N. Rathna",E0299:"Kunal N Chaudhary",
+                      E1222:"P.S. Sastry",E1246:"Pavankumar vaibhav K",
+                      E1251:"Muthuvel Arigovindan",E9201:"Soma Ghosh/Prasanta Kumar Biswas",
+                      E9241:"Soma/Rajiv",E9245:"Venu Madhav Govindu",
+                      E9291:"G.N. Rathna",E9309:"Sriram Ganapathy"}
+var softcore_credit={DS211:3,DS290:3,DS201:2}
+var elective_credit={DS263:4,DS291:4,E1241:3,E4231:3,E4234:3,E5206:3,E6211:3,E6224:3,E6226:3,E8201:3,E0247:4,E0299:4,E1222:3,
+                     E1246:3,E1251:3,E9201:3,E9241:3,E9245:4,E9291:3,E9309:4}
+var softcore=0;
+var elective=0;
+var flag1=0;
+var flag2=0;
+var flag12=0;
+if(course1=="" || course2=="")
+document.getElementById("error").innerHTML="You have not selected desired number of courses"+category1;
+
+else if(course1==course2)
+document.getElementById("error").innerHTML="Please select two different courses";
+else
+{ 
+  len=cds_hardcore_time.length;
+  len1=course_time[course1].length;
+  len2=course_time[course2].length;
+  for(i=0;i<len;i++){
+    for(j=0;j<len1;j++){
+      if(cds_hardcore_time[i]==course_time[course1][j]){
+        flag1=1;
+      }
+    }
+    for(k=0;k<len2;k++){
+      if(cds_hardcore_time[i]==course_time[course2][k]){
+        flag2=1;
+      }
+    }
+  }
+  for(i=0;i<len1;i++){
+    for(j=0;j<len2;j++){
+      if(course_time[course1][i]==course_time[course2][j]){
+        flag12=1;
+      }
+    }
+  }
+  if(flag1==1 && flag2==0){
+    document.getElementById("error").innerHTML=course1+"  is clashing with hardcore";
+  }
+  else if(flag2==1 && flag1==0){
+    document.getElementById("error").innerHTML=course2+"  is clashing with hardcore";
+  }
+  else if(flag1==1 && flag2==1){
+    document.getElementById("error").innerHTML="both are clashing with hardcore";
+  }
+  else if(flag12==1 && flag1==0 && flag2==0){
+    document.getElementById("error").innerHTML=course1+"  is clashing with  "+course2;
+  }
+  else if(flag1==0 && flag2==0 && flag12==0){
+  for(k=0;k<len1;k++){
+     document.getElementById(course_time[course1][k]).innerHTML=course1.bold();
+     }
+ 
+ 
+  for(k=0;k<len2;k++){
+     document.getElementById(course_time[course2][k]).innerHTML=course2.bold();
+     }
+  if(category1=="Softcore" && category2=="Softcore")
+    softcore=softcore+softcore_credit[course1]+softcore_credit[course2];
+  else if(category1=="Softcore" && category2=="Elective"){
+    softcore=softcore+softcore_credit[course1];
+    elective=elective+elective_credit[course2];
+  }
+  else if(category1=="Elective" && category2=="Softcore"){
+    softcore=softcore+softcore_credit[course2];
+    elective=elective+elective_credit[course1];
+  }
+  else
+   elective=elective+elective_credit[course1]+elective_credit[course2];
+      
+ document.getElementById("instructor1").value=course_prof[course1];
+ document.getElementById("instructor2").value=course_prof[course2];
+ document.getElementById("error").innerHTML="Credit details--> Hardcore : 10   Softcore : "+softcore+"  Elective : "+elective;
+  }
+ }
+}
+
+
+</script>
+<h1><center><b><font color="blue" face="times new roman">CDS 2020 FALL SEMESTER COURSE SELECTOR </b></center></h1>
+<h2><center><b> M.Tech. Coursework Students only </font></b></center></hr>
+<p>Non Hardcore course 1:</p>
+<form>
+Category: <select name="category1" id="cat1" onchange="javascript: conditional_dropdown(this.options[this.selectedIndex].value);">
+<option value="">Select Category</option>
+<option value="Softcore">Softcore</option>
+<option value="Elective">Elective</option>
+</select>
+&emsp;
+Dept: <select name="dept1" id="dept1" onchange="javascript: conditional_dropdown_course1(this.options[this.selectedIndex].value);"></select>
+
+&emsp; Course: <select name="course1" id="course1">
+</select>
+&emsp; Instructor: <input type="text" size="20" id="instructor1">
+<br>
+<p>Non Hardcore course 2:</p>
+Category: <select name="category2" id="cat2" onchange="javascript: conditional_dropdown_2(this.options[this.selectedIndex].value);">
+<option value="">Select Category</option>
+<option value="Softcore">Softcore</option>
+<option value="Elective">Elective</option>
+</select>
+&emsp; Dept: <select name="dept2" id="dept2" onchange="javascript: conditional_dropdown_course2(this.options[this.selectedIndex].value);"></select>
+
+&emsp; Course: <select name="course2" id="course2">
+</select>
+&emsp; Instructor: <input type="text" size="20" id="instructor2">
+<br>
+<center>
+<input type="button" value="SUBMIT" onclick="javascript: same_check()">
+<input type="button" value="Refresh" onClick="window.location.reload();">
+</center>
+<hr>
+</form>
+<table border>
+<caption><font size="5"> Your Semester Schedule </font></caption>
+<tr>
+<th>Day</th>
+<th>8:00-8:30</th>
+<th>8:30-9:00</th>
+<th>9:00-9:30</th>
+<th>9:30-10:00</th>
+<th>10:00-10:30</th>
+<th>10:30-11:00</th>
+<th>11:00-11:30</th>
+<th>11:30-12:00</th>
+<th>12:00-12:30</th>
+<th>12:30-13:00</th>
+<th>13:00-14:00</th>
+<th>14:00-14:30</th>
+<th>14:30-15:00</th>
+<th>15:00-15:30</th>
+<th>15:30-16:00</th>
+<th>16:00-16:30</th>
+<th>16:30-17:00</th>
+<th>17:00-17:30</th>
+<th>17:30-18:00</th>
+</tr>
+<tr>
+<td><b>Mon</b></td>
+<td id="M8" style="text-align:center"></td>
+<td id="M8.5" style="text-align:center"></td>
+<td id="M9" style="text-align:center"></td>
+<td id="M9.5" style="text-align:center"></td>
+<td id="M10" style="text-align:center"></td>
+<td id="M10.5" style="text-align:center"></td>
+<td id="M11" bgcolor="#00FF00"><center><b>DS284 NLA</b></center></td>
+<td id="M11.5" bgcolor="#00FF00"><center><b>DS284 NLA</b></center></td>
+<td id="M12" style="text-align:center"></td>
+<td id="M12.5" style="text-align:center"></td>
+<td id="M13" rowspan="5"><center><b>Lunch</b></center></td>
+<td id="M14" style="text-align:center"></td>
+<td id="M14.5" style="text-align:center"></td>
+<td id="M15" style="text-align:center"></td>
+<td id="M15.5" style="text-align:center"></td>
+<td id="M16" style="text-align:center"></td>
+<td id="M16.5" style="text-align:center"></td>
+<td id="M17" style="text-align:center"></td>
+<td id="M17.5" style="text-align:center"></td>
+</tr>
+<tr>
+<td><b>Tue</b></td>
+<td id="T8" style="text-align:center"></td>
+<td id="T8.5" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="T9" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="T9.5" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="T10" style="text-align:center"></td>
+<td id="T10.5" style="text-align:center"></td>
+<td id="T11" style="text-align:center"></td>
+<td id="T11.5" style="text-align:center"></td>
+<td id="T12" style="text-align:center"></td>
+<td id="T12.5" style="text-align:center"></td>
+<td id="T14" bgcolor="#00FF00"><center><b>DS221 ISS</b></center></td>
+<td id="T14.5" bgcolor="#00FF00"><center><b>DS221 ISS</b></center></td>
+<td id="T15" bgcolor="#00FF00"><center><b>DS221 ISS</b></center></td>
+<td id="T15.5" style="text-align:center"></td> 
+<td id="T16" style="text-align:center"></td> 
+<td id="T16.5" style="text-align:center"></td> 
+<td id="T17" style="text-align:center"></td>
+<td id="T17.5" style="text-align:center"></td>
+</tr>
+<tr>
+<td><b>Wed</b></td>
+<td id="W8" style="text-align:center"></td>
+<td id="W8.5" style="text-align:center"></td>
+<td id="W9" style="text-align:center"></td>
+<td id="W9.5" style="text-align:center"></td>
+<td id="W10" style="text-align:center"></td>
+<td id="W10.5" style="text-align:center"></td>
+<td id="W11" bgcolor="#00FF00"><center><b>DS284 NLA</a></b></center></td>
+<td id="W11.5" bgcolor="#00FF00"><center><b>DS284 NLA</a></b></center></td>
+<td id="W12" style="text-align:center"></td>
+<td id="W12.5" style="text-align:center"></td>
+<td id="W14" style="text-align:center"></td>
+<td id="W14.5" style="text-align:center"></td>
+<td id="W15" style="text-align:center"></td>
+<td id="W15.5" style="text-align:center"></td>
+<td id="W16" style="text-align:center"></td>
+<td id="W16.5" style="text-align:center"></td>
+<td id="W17" style="text-align:center"></td>
+<td id="W17.5" style="text-align:center"></td>
+</tr>
+<tr>
+<td><b>Thu</b></td>
+<td id="Th8" style="text-align:center"></td>
+<td id="Th8.5" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="Th9" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="Th9.5" bgcolor="#00FF00"><center><b>DS288 NM</b></center></td>
+<td id="Th10" style="text-align:center"></td>
+<td id="Th10.5" style="text-align:center"></td>
+<td id="Th11" style="text-align:center"></td>
+<td id="Th11.5" style="text-align:center"></td>
+<td id="Th12" style="text-align:center"></td>
+<td id="Th12.5" style="text-align:center"></td>
+<td id="Th14" bgcolor="#00FF00"><center><b>DS221 ISS</a></b></center></td>
+<td id="Th14.5" bgcolor="#00FF00"><center><b>DS221 ISS</a></b></center></td>
+<td id="Th15" bgcolor="#00FF00"><center><b>DS221 ISS</a></b></center></td>
+<td id="Th15.5" style="text-align:center"></td>
+<td id="Th16" style="text-align:center"></td> 
+<td id="Th16.5" style="text-align:center"></td> 
+<td id="Th17" style="text-align:center"></td>
+<td id="Th17.5" style="text-align:center"></td>
+</tr>
+<tr>
+<td><b>Fri</b></td>
+<td id="F8" style="text-align:center"></td>
+<td id="F8.5" style="text-align:center"></td>
+<td id="F9" style="text-align:center"></td>
+<td id="F9.5" style="text-align:center"></td>
+<td id="F10" style="text-align:center"></td>
+<td id="F10.5" style="text-align:center"></td>
+<td id="F11" bgcolor="#00FF00"><center><b>DS284 NLA</b></center></td>
+<td id="F11.5" bgcolor="#00FF00"><center><b>DS284 NLA</b></center></td>
+<td id="F12" style="text-align:center"></td>
+<td id="F12.5" style="text-align:center"></td>
+<td id="F14" style="text-align:center"></td>
+<td id="F14.5" style="text-align:center"></td>
+<td id="F15" style="text-align:center"></td>
+<td id="F15.5" style="text-align:center"></td>
+<td id="F16" style="text-align:center"></td>
+<td id="F16.5" style="text-align:center"></td>
+<td id="F17" style="text-align:center"></td>
+<td id="F17.5" style="text-align:center"></td>
+</tr>
+
+</table>
+
+<center><p id="error"></p></center>
+</body>
+</html>
+
